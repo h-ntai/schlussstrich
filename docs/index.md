@@ -12,4 +12,4 @@ Sie dient lediglich zur Aufklärung und weshalb man die (meißten) aus dem Serve
 
 ## Support
 
-Brauchst du Hilfe? Komm und stelle mir fragen in [meinem Community-Server](https://discord.gg/n4bhteN9YD)!
+Brauchst du Hilfe? Komm und stelle mir Fragen in [meinem Community-Server](https://discord.gg/n4bhteN9YD)!
