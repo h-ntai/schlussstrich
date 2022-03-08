@@ -1,4 +1,4 @@
-# Introduction
+# Einleitung
 
 Hey, willkommen! Das ist eine inoffizielle Dokumentation über Ahmad Ahmad sein Discord Server.
 
