@@ -1,15 +1,11 @@
-# Guilded Unofficial API Documentation
+# Ahmad.neu Discord Server Dokumentation
 
-This repo contains some unofficial User API documentation for Guilded, which can be viewed online [HERE](https://guildedapi.com). Before submitting pull-requests, please remember to _fully_ read the [Contributing](CONTRIBUTING.md) guidelines.
 
 ## Markdown Syntax
 
-This repository uses special markdown syntax that helps style the resulting web version of the documentation.
+Diese repository nutzt wine spezielle markdown syntax welche uns dabei hilft die Web Dokumentation zu vereinfachen.
 
-### H6 Headings
 
-H6 headings should be used above tables and code blocks to properly label them.
+## Joine dem Support Server
 
-## Join the Guilded API Server
-
-[The Unofficial API server](https://community.guildedapi.com) is a great place for library and bot developers to hang out and chat. It's also a great starting point for those looking to dive in and learn bot-creation with the API.
+[Der Support Server](https://discord.gg/n4bhteN9YD) ist ein toller Ort, an dem man Fragen über die Dokumentation stellen kann.
