@@ -8,7 +8,7 @@
 ## Unwanted Changes
 
 1. Whitespace or formatting changes.
-2. Modifications to the overall structure and format of the API docs.
+2. Modifications to the overall structure and format of the docs.
 3. Additions that replicate or needlessly restructure current documentation.
 
-Contributions to this repository should conform to [Guilded's ToU](https://guilded.gg/terms), i.e. don't promote the breaching of ToU.
+Contributions to this repository should conform to [Discord's ToS](https://discord.com/terms), i.e. don't promote the breaching of ToS.
