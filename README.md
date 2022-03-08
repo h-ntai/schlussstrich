@@ -3,7 +3,7 @@
 
 ## Markdown Syntax
 
-Diese repository nutzt wine spezielle markdown syntax welche uns dabei hilft die Web Dokumentation zu vereinfachen.
+Diese repository nutzt eine spezielle markdown syntax welche uns dabei hilft die Web Dokumentation zu vereinfachen.
 
 
 ## Joine dem Support Server
