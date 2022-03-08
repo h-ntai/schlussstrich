@@ -1,15 +1,15 @@
 # Introduction
 
-Hey, welcome! This is some unofficial documentation of the Guilded user API. Please [read the Terms of Use](https://support.guilded.gg/hc/en-us/articles/360039728313-Terms-of-use) before using the API. 
+Hey, willkommen! Das ist eine inoffizielle Dokumentation über Ahmad Ahmad sein Discord Server.
 
-This [documentation is on GitHub](https://github.com/guildedapi/docs), so you know what to do there.
+Diese [Dokumentation ist auf GitHub](https://github.com/h-ntai/schlussstrich), damit du weißt was dort zutun ist.
 
-## Userbots & You
+## Serverstaff & Du
 
-Using the API to 'bot' your user account is a gray area in terms of ToU compliance. For this reason, these pages do not condone automating a user account and they exist solely for educational purposes.
+Diese Dokumentation soll weder Niedermachung, noch irgend eine Art von Bloßstellung unterstützen.
 
-There is not yet any publicly available bot API like there is in Discord.
+Sie dient lediglich zur Aufklärung und weshalb man die (meißten) aus dem Serverstaff entfernen bzw. ersetzen sollte.
 
 ## Support
 
-Need some help? Come ask over at [the community API server](guilded://guilded-api)! ([or here if you don't have the guilded client installed](https://community.guildedapi.com))
+Brauchst du Hilfe? Komm und stelle mir fragen in [meinem Community-Server](https://discord.gg/n4bhteN9YD)!
