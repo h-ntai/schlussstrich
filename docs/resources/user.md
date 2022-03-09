@@ -19,7 +19,7 @@ Hier wird das Verhalten von jedem Member sehr kurz in Stichpunkten zusammengefas
 - aktiv
 - sehr reif
 
-mehr Infos über Rouji gibt es [hier]()
+mehr Infos über Rouji gibt es [hier](/schlussstrich/resources/team/#roujina)
 
 ### mojti
 
@@ -42,7 +42,7 @@ mehr Infos über Rouji gibt es [hier]()
 - täuscht quit an, damit andere ihn anbetteln
 - nicht reif
 
-mehr Infos über Bled gibt es [hier]()
+mehr Infos über Bled gibt es [hier](/schlussstrich/resources/team/#bled)
 
 ### Samion
 
@@ -52,7 +52,7 @@ mehr Infos über Bled gibt es [hier]()
 - ziemlich aktiv
 - zienlich unreif
 
-mehr Infos über Samion gibt es [hier]()
+mehr Infos über Samion gibt es [hier](/schlussstrich/resources/team/#samion)
 
 ### Jamie
 
@@ -62,7 +62,7 @@ mehr Infos über Samion gibt es [hier]()
 - beeft viel
 - sehr unreif
 
-mehr Infos über Jamie gibt es [hier]()
+mehr Infos über Jamie gibt es [hier](/schlussstrich/resources/team/#jamie)
 
 ### Freya
 
@@ -72,7 +72,7 @@ mehr Infos über Jamie gibt es [hier]()
 - oft aktiv
 - unreif
 
-mehr Infos über Freya gibt es [hier]()
+mehr Infos über Freya gibt es [hier](/schlussstrich/resources/team/#freya)
 
 ### Silvana
 
@@ -90,7 +90,7 @@ mehr Infos über Freya gibt es [hier]()
 - bisschen aktiv
 - ziemlich reif
 
-mehr Infos über Efe gibt es [hier]()
+mehr Infos über Efe gibt es [hier](/schlussstrich/resources/team/#efe)
 
 ### Alex
 
@@ -143,7 +143,7 @@ mehr Infos über Efe gibt es [hier]()
 - lächerlich
 - relativ aktiv
 
-mehr Infos über Urologe gibt es [hier]()
+mehr Infos über Urologe gibt es [hier](/schlussstrich/resources/team/#urologe)
 
 ### Zytro
 
@@ -151,7 +151,7 @@ mehr Infos über Urologe gibt es [hier]()
 - ziemlich inaktiv
 - unreif
 
-mehr Infos über Zytro gibt es [hier]()
+mehr Infos über Zytro gibt es [hier](/schlussstrich/resources/team/#zytro)
 
 
 
