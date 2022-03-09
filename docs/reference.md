@@ -27,21 +27,22 @@ Hier ist eine Liste, die direkt zu den Usern führt:
 
 | User       | Link   |
 |------------|--------|
-| Panda      | string |
-| Roujina    | string |
-| Mojti      | string |
-| Max        | string |
-| Bled       | string |
-| Samion     | string |
-| Jamie      | string |
-| Freya      | string |
-| Silvana    | string |
-| Efe        | string |
-| Alex       | string |
-| Paiton     | string |
-| Erva       | string |
-| Is weis nis| string |
-| Alpha      | string |
-| Urologe    | string |
+| Panda      | [link](/schlussstrich/resources/user/#panda) |
+| Roujina    | [link](/schlussstrich/resources/user/#roujina) |
+| Mojti      | [link](/schlussstrich/resources/user/#mojti) |
+| Max        | [link](/schlussstrich/resources/user/#max) |
+| Bled       | [link](/schlussstrich/resources/user/#bled) |
+| Samion     | [link](/schlussstrich/resources/user/#samion) |
+| Jamie      | [link](/schlussstrich/resources/user/#jamie) |
+| Freya      | [link](/schlussstrich/resources/user/#freya) |
+| Silvana    | [link](/schlussstrich/resources/user/#silvana) |
+| Efe        | [link](/schlussstrich/resources/user/#efe) |
+| Alex       | [link](/schlussstrich/resources/user/#alex) |
+| Paiton     | [link](/schlussstrich/resources/user/#paiton) |
+| Erva       | [link](/schlussstrich/resources/user/#erva) |
+| Is weis nis| [link](/schlussstrich/resources/user/#is-weis-nis) |
+| Alpha      | [link](/schlussstrich/resources/user/#alpha) |
+| Urologe    | [link](/schlussstrich/resources/user/#urologe) |
+| Zytro      | [link](/schlussstrich/resources/user/#zytro) |
 
 *mich selber habe ich nicht miteingetragen, da man nur schwer über sich selber urteilen kann*
