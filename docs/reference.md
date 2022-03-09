@@ -4,7 +4,7 @@ Auf dieser Seite wird das Grundsätzliche kurz und knapp zusammengefasst und erk
 
 ## Suchleiste
 
-Mit der Suchleiste kann man mit leichtigkeit nach Sachen suchen und sie finden. Probiere es mal aus! 
+Mit der Suchleiste kann man mit Leichtigkeit nach Sachen suchen und sie finden. Probiere es mal aus! 
 
 ## Umänderung des Servers
 
