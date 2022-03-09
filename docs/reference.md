@@ -2,6 +2,10 @@
 
 Auf dieser Seite wird das Grundsätzliche kurz und knapp zusammengefasst und erklärt
 
+## Suchleiste
+
+Mit der Suchleiste kann man mit leichtigkeit nach Sachen suchen und sie finden. Probiere es mal aus! 
+
 ## Umänderung des Servers
 
 Im Discord Server wurde innerhalb eines Tages sehr viel rollenmäßiges umgeändert.
