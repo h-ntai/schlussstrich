@@ -48,21 +48,21 @@ Represents a team or DM channel.
 | type                | string             | the [type of channel](#channel-types)                              |
 | name                | ?string            | the name of this channel (group dms?)                              |
 | description         | ?string            | the description of this channel (group dms???)                     |
-| users               | array              | list of [users](/resources/user#user-object) in this dm (including yourself) |
+| users               | array              | list of [users](/schlussstrich/resources/user#user-object) in this dm (including yourself) |
 | createdAt           | ISO8601 timestamp  | when this channel was created                                      |
-| createdBy           | [user id](/resources/user#user-object) | the user's id who created this dm                        |
+| createdBy           | [user id](/schlussstrich/resources/user#user-object) | the user's id who created this dm                        |
 | updatedAt           | ISO8601 timestamp  | when this channel was last updated                                 |
 | contentType         | string             | the [content type of channel](#channel-content-types). should always be 'chat' |
 | archivedAt          | ?ISO8601 timestamp | when this channel was archived                                      |
 | autoArchiveAt       | ?ISO8601 timestamp | when this channel will automatically be archived                    |
-| archivedBy          | ?[user id](/resources/user#user-object) | the user's id who archived this channel                 |
+| archivedBy          | ?[user id](/schlussstrich/resources/user#user-object) | the user's id who archived this channel                 |
 | parentChannelId     | ?uuid              | this channel's parent id                                            |
 | deletedAt           | ?ISO8601 timestamp | when this channel was deleted                                       |
-| createdByWebhookId  | ?[webhook id](/resources/webhook#webhook-object) | the webhook's id that created this channel  |
-| archivedByWebhookId | ?[webhook id](/resources/webhook#webhook-object) | the webhook's id that archived this channel |
+| createdByWebhookId  | ?[webhook id](/schlussstrich/resources/webhook#webhook-object) | the webhook's id that created this channel  |
+| archivedByWebhookId | ?[webhook id](/schlussstrich/resources/webhook#webhook-object) | the webhook's id that archived this channel |
 | dmType              | string             | the dm type of channel. known values: 'Default'                     |
-| ownerId             | [user id](/resources/user#user-object) | the user's id who owns this dm                  |
-| voiceParticipants?  | array              | list of [users](/resources/user#user-object) in the dm's voice call |
+| ownerId             | [user id](/schlussstrich/resources/user#user-object) | the user's id who owns this dm                  |
+| voiceParticipants?  | array              | list of [users](/schlussstrich/resources/user#user-object) in the dm's voice call |
 
 ###### Channel Types
 
@@ -355,7 +355,7 @@ Represents a team or DM channel.
 }
 ```
 
-![example dm channel message](/images/example_dm_channel_message.png)
+![example dm channel message](/schlussstrich/images/example_dm_channel_message.png)
 
 ### Message Object
 
@@ -637,10 +637,10 @@ Leading and trailing whitespace characters are included in the following limits;
 | title                                                    | 256 characters   |
 | description                                              | 2048 characters  |
 | fields                                                   | 25 field objects |
-| [field.name](/resources/channel#embed-field-structure)   | 256 characters   |
-| [field.value](/resources/channel#embed-field-structure)  | 1024 characters  |
-| [footer.text](/resources/channel#embed-footer-structure) | 2048 characters  |
-| [author.name](/resources/channel#embed-author-structure) | 256 characters   |
+| [field.name](/schlussstrich/resources/channel#embed-field-structure)   | 256 characters   |
+| [field.value](/schlussstrich/resources/channel#embed-field-structure)  | 1024 characters  |
+| [footer.text](/schlussstrich/resources/channel#embed-footer-structure) | 2048 characters  |
+| [author.name](/schlussstrich/resources/channel#embed-author-structure) | 256 characters   |
 
 There is no explicit character limit for the sum of all the above fields, however utilizing every text slot you may fit a total of 36,608 characters per embed.
 
@@ -657,7 +657,7 @@ Delete a channel. Deleting a category does not delete its child channels; they w
 ## Get Channel Messages
 <span class="http-verb">GET</span><span class="http-path">/channels/{[channel.id](/resources/channel#channel-object)}/messages</span>
 
-Returns the messages for a channel. Does not require authentication. Returns an array of [message](/resources/channel#message-object) objects and a boolean `hasPastMessages` detailing if there are messages preceeding this array on success.
+Returns the messages for a channel. Does not require authentication. Returns an array of [message](/schlussstrich/resources/channel#message-object) objects and a boolean `hasPastMessages` detailing if there are messages preceeding this array on success.
 
 Query string parameter `limit` has been tested up to 50,000.
 
@@ -682,17 +682,17 @@ Get a specific message in the channel. Returns a [message object](#message-objec
 ## Send Message
 <span class="http-verb">POST</span><span class="http-path">/channels/{[channel.id](/resources/channel#channel-object)}/messages</span>
 
-Post a message to a team channel or DM channel. Returns a [message](#message-object) object. Fires a [Message Create](/topics/gateway#ChatMessageCreated) Gateway event.
+Post a message to a team channel or DM channel. Returns a [message](#message-object) object. Fires a [Message Create](/schlussstrich/topics/gateway#ChatMessageCreated) Gateway event.
 
-The actual uploading of attachments is a separate endpoint. See [how to upload files](/reference#upload-a-file). Use a dynamicMediaTypeId of `ContentMedia`.
+The actual uploading of attachments is a separate endpoint. See [how to upload files](/schlussstrich/reference#upload-a-file). Use a dynamicMediaTypeId of `ContentMedia`.
 
 ###### JSON Params
 
 | Field         | Type                                          | Description                                                                   |
 |---------------|-----------------------------------------------|-------------------------------------------------------------------------------|
-| messageId     | [uuid](/reference#snowflakes-uuids)           | the id for this message                                                       |
+| messageId     | [uuid](/schlussstrich/reference#snowflakes-uuids)           | the id for this message                                                       |
 | content       | message content (see below)                   | the message contents (up to 4,000 characters of text)                         |
-| repliesToIds? | array of [uuids](/reference#snowflakes-uuids) | up to 5 messages ids to reply to                                              |
+| repliesToIds? | array of [uuids](/schlussstrich/reference#snowflakes-uuids) | up to 5 messages ids to reply to                                              |
 | isSilent?     | boolean                                       | this reply should notify the authors of the messages it is replying to        |
 | isPrivate?    | boolean                                       | this reply should be "private" (only visible to people involved in the reply) |
 
@@ -835,7 +835,7 @@ Edit a previously sent message.
 ## Delete Message
 <span class="http-verb">DELETE</span><span class="http-path">/channels/{[channel.id](/resources/channel#channel-object)}/messages/{[message.id](/resources/channel#message-object)}</span>
 
-Delete a message. Fires a [Message Delete](/topics/gateway#ChatMessageDeleted) Gateway event.
+Delete a message. Fires a [Message Delete](/schlussstrich/topics/gateway#ChatMessageDeleted) Gateway event.
 
 ## Add Reaction
 <span class="http-verb">POST</span><span class="http-path">/channels/{[channel.id](/resources/channel#channel-object)}/messages/{[message.id](/resources/channel#message-object)}/reactions/{reaction.id}</span>
@@ -850,7 +850,7 @@ Delete your reaction to a message. Returns a pretty empty `[[], []]` on success.
 ## Get Pinned Messages
 <span class="http-verb">GET</span><span class="http-path">/channels/{[channel.id](/resources/channel#channel-object)}/pins</span>
 
-Returns all pinned messages in the channel as an array of [message](/resources/channel#message-object) objects inside a `message` key.
+Returns all pinned messages in the channel as an array of [message](/schlussstrich/resources/channel#message-object) objects inside a `message` key.
 
 ## Pin Message
 <span class="http-verb">POST</span><span class="http-path">/channels/{[channel.id](/resources/channel#channel-object)}/pins</span>
@@ -882,8 +882,8 @@ Create a new thread in a channel. Returns the created thread object on success.
 |----------------------|-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | name                 | string                              | the name that this thread should have                                                                                               |
 | message              | [message](#example-request-body)    | the message to send when creating this thread                                                                                       |
-| channelId            | [uuid](/reference#snowflakes-uuids) | the id that this thread will have                                                                                                   |
-| threadMessageId      | [uuid](/reference#snowflakes-uuids) | ?                                                                                                                                   |
+| channelId            | [uuid](/schlussstrich/reference#snowflakes-uuids) | the id that this thread will have                                                                                                   |
+| threadMessageId      | [uuid](/schlussstrich/reference#snowflakes-uuids) | ?                                                                                                                                   |
 | initialThreadMessage | [message](#message-object)          | the message that this thread is starting on                                                                                         |
 | contentType          | string                              | the [channel content type](#channel-content-types) that this thread should be. can probably only be 'chat', but try others and see! |
 | confirmed            | boolean                             | ?                                                                                                                                   |
