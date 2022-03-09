@@ -30,7 +30,7 @@ The rest of the event's data is included top-level with the event payload (e.g. 
 
 ## Connecting to the Gateway
 
-It is important to note the Gateway's base URL here (which is different from [the REST API's](/reference)):
+It is important to note the Gateway's base URL here (which is different from [the REST API's](/schlussstrich/reference)):
 
 ```
 wss://api.guilded.gg
@@ -45,8 +45,8 @@ wss://api.guilded.gg
 | jwt             | string  | authentication stuff?           | 'undefined'                              |
 | EIO             | integer | Engine.IO version               | 3                                        |
 | transport       | string  | the type of transport           | 'websocket'                              |
-| guildedClientId | string  | used for authentication         | the `guilded_mid` cookie received when [logging in via REST](/reference#quick-authentication-how-to) |
-| ?teamId \*      | string  | the team's socket to connect to | a [team ID](/resources/team#team-object) |
+| guildedClientId | string  | used for authentication         | the `guilded_mid` cookie received when [logging in via REST](/schlussstrich/reference#quick-authentication-how-to) |
+| ?teamId \*      | string  | the team's socket to connect to | a [team ID](/schlussstrich/resources/team#team-object) |
 
 \* This is for team-specific events like member and channel updates. In order to receive a team's events, you will need to open a separate connection for it, which you should treat just like the main websocket - heartbeat and all.
 
@@ -89,7 +89,7 @@ When you close the connection to the gateway with the close code 1000 or 1001, y
 ## Rate Limiting
 
 !!! info
-    This section is about Gateway rate limits, not [HTTP API rate limits](/reference/#rate-limiting).
+    This section is about Gateway rate limits, not [HTTP API rate limits](/schlussstrich/reference/#rate-limiting).
 
 Currently unknown. See above.
 
@@ -283,4 +283,4 @@ Sent on connection to the websocket. Defines the heartbeat interval that the cli
 
 #### DMChatChannelCreated
 
-Someone has created a new DM channel with you. Congrats! This is also sent when _you_ create the channel, which is less exciting. You'll get a [channel](/resources/channel#channel-object) object in the payload.
+Someone has created a new DM channel with you. Congrats! This is also sent when _you_ create the channel, which is less exciting. You'll get a [channel](/schlussstrich/resources/channel#channel-object) object in the payload.
