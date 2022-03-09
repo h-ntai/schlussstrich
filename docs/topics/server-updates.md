@@ -1,26 +1,51 @@
-# Status Codes in the API
+# Kritische Umänderungen im Server
 
-## Gateway
+## Rollenpositionen & Rollen an sich
 
-Specifics of the Gateway's close codes are not known - if custom codes are even used at all. For the time being, refer to [the standard WebSocket close codes](https://developer.mozilla.org/en-US/docs/Web/API/CloseEvent#status_codes) for what any given code you may recieve means.
+Zur Zeit gibt es folgende Hierarchie bei den Rollen:
+1. Admin
+2. Pokemon Meister
+3. Bleddi
+4. Moderatoren
+5. Techniker
+6. Alpha
+7. T-Moderator (Rolle ist überflüssig, da keiner sie hat)
+8. Head-Sup
+9. Supporter
+10. Testphase
 
-## HTTP
+Die alte Hierarchie war folgendermaßen:
 
-Similarly to any other REST API, HTTP response codes are returned based on the success of each of your requests. The following table can be used as a reference. It is a modified version of [Discord's table for the same purpose](https://discord.com/developers/docs/topics/opcodes-and-status-codes#http-http-response-codes).
+1. Admin
+2. Techniker
+3. Moderatoren
+4. Alpha
+5. T-Mod
+6. Community Manager
+7. Head-Sup
+8. Supporter
+9. Testphase
 
-###### HTTP Response Codes
 
-| Code                      | Meaning                                                                              |
-|---------------------------|--------------------------------------------------------------------------------------|
-| 200 (OK)                  | The request completed successfully.                                                  |
-| 201 (CREATED)             | The entity was created successfully.                                                 |
-| 204 (NO CONTENT)          | The request completed successfully and returned no content.                          |
-| 304 (NOT MODIFIED)        | The entity was not modified (no action was taken).                                   |
-| 400 (BAD REQUEST)         | The request was improperly formatted, or the server couldn't understand it.          |
-| 401 (UNAUTHORIZED)        | Proper authorization was not passed or passed improperly.                            |
-| 403 (FORBIDDEN)           | The authorization you passed is not allowed to access this resource.                 |
-| 404 (NOT FOUND)           | The resource at the location specified doesn't exist.                                |
-| 405 (METHOD NOT ALLOWED)  | The HTTP method used is not valid for the location specified.                        |
-| 429 (TOO MANY REQUESTS)   | You are being rate limited.                                                          |
-| 502 (GATEWAY UNAVAILABLE) | There was not a gateway available to process your request. Wait a bit and retry.     |
-| 5xx (SERVER ERROR)        | The server had an error processing your request (these are rare).                    |
+Die alte Hierarchie an sich war besser als die neue und es gab eine nützliche Rolle Namens "Community Manager", welche mittlerweile gelöscht wurde.
+Die Moderatoren wurden grundlos gebufft, und die Techniker (welche für die Serverordnung zuständig sind) wurden übertrieben generft.
+
+Unabgesehen von der Hierarchie der Rollen muss man auch erwähnen wie ungerecht oder unnützlich paar Rollen sind.
+Die Rolle "Pokemon Meister" könnte fatal missbraucht werden, da sie ja die Position eines Members erhöht. Ein Moderator mit der Rolle wäre z.B. in der Lage einen anderen Moderator ohne diese Rolle zu bannen.
+Kommen wir zunächst zu der Rolle "Bleddi". Diese Rolle ist 1. unverdient, da der Besitzer der Rolle (Bled) mehrere Monate weg war und dann aus Langweile rejoint ist, weil ihn viele Leute wie ein Hund angebettelt haben. 2. Ist die Position der Rolle komplett übertrieben hoch. Sie befindet sich über den Moderatoren, Technikern etc., was wiederum dazu führt, dass die Rechte, die man hat, ausgenutzt werden, da man diesen "speziellen Platz" hat.
+Kommen wir nun zu der ehemaligen Rolle "Community Manager".
+Diese Rolle wäre eigentlich genau jetzt der perfekte Zeitpunkt gewesen, da so viele in der Serverhierarchie übertriebener Weise aufgestiegen sind.
+Statt der "Moderator" Rolle sollte man einigen "Community Manager" oder "Head Supporter" geben.
+
+
+## Unüberlegte Beförderungen / Degradierungen
+
+Hierzu muss man nicht viel sagen. Die meißten Member werden unüberlegt befördert, degradiert und teilweise "bestraft" oder gar "belohnt".
+Viele sind nicht in der Lage mit Verstand und Gehirn zu denken, sondern denken viel lieber mit ihrem Herz, was im echten Leben manchmal gut sein kann, aber definitiv nicht in einem Discord Server, in dem man Verantwortung für über 1,9k Leute trägt.
+Die meißten Staffmember nörgeln bei jeder Kleinigkeit rum und kreieren mehr Streite statt welche zu schleichen.
+Zudem haben sich innerhalb des Staffs und des Servers kleine Gruppen gebildet, die nie neutral an eine Angelegenheit gehen, sondern direkt parteiisch Eingreifen. "Zufälliger" Weise kommen diese Leute, die Bündnisse gebildet haben schneller in der Rollenhierarchie voran als die neutralen Leute.
+
+## Keine Konsequenzen
+
+Fehler gehören zum Alltag eines Menschen, dennoch muss man schwerwiegende Fehler von kleinen Fehlern differenzieren können.
+Oft kommen Leute zu einfach mit einem schweren Regelverstoß davon und umso öfter werden Leute wegen simplen Fehlern bestraft (keine schwerwiegenden Strafen in den meißten Fällen, aber es gab auch schon einige Sonderfälle, in denen die Rechte vom Staff stark ausgenutzt wurden)
