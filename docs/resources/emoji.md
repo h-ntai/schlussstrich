@@ -10,13 +10,13 @@ A "custom reaction" refers to a custom server emoji in Guilded. However, since t
 |-----------------|-----------------------------------------|--------------------------------------------------------------|
 | id              | integer                                 | emoji's id (cannot be used for forming a cdn url)            |
 | name            | string                                  | emoji's name                                                 |
-| createdBy       | [user id](/resources/user#user-object)  | user's id that created this emoji                            |
+| createdBy       | [user id](/schlussstrich/resources/user#user-object)  | user's id that created this emoji                            |
 | createdAt       | ISO8601 timestamp                       | when this emoji was created                                  |
 | png             | string                                  | aws url to this emoji's image file                           |
 | webp            | string                                  | aws url to this emoji's image file                           |
 | apng            | string                                  | aws url to this emoji's image file                           |
 | aliases         | array of strings                        | an array of aliases this emoji can be used with              |
-| teamId          | [team id](/resources/team#team-object)  | team's id that this emoji is from                            |
+| teamId          | [team id](/schlussstrich/resources/team#team-object)  | team's id that this emoji is from                            |
 | isDeleted       | boolean                                 | whether this emoji has been deleted                          |
 | discordEmojiId  | ?snowflake                              | the discord emoji's id this emoji corresponds to             |
 | discordSyncedAt | ?ISO8601 timestamp                      | when this emoji was last synced with its discord counterpart |
@@ -172,7 +172,7 @@ Returns a list of [emoji](#custom-emoji-object) objects for the given team.
 | maxItems         | integer                                | maximum number of emojis to return                        | | |
 | when[upperValue] | ISO8601 timestamp                      | return emojis created after this time                     | false | |
 | when[lowerValue] | ISO8601 timestamp                      | return emojis created before this time                    | false | |
-| createdBy        | [user id](/resources/user#user-object) | return emojis created by this user's id                   | false | |
+| createdBy        | [user id](/schlussstrich/resources/user#user-object) | return emojis created by this user's id                   | false | |
 | searchTerm       | string                                 | search emoji names with a string                          | false | |
 | beforeId         | [emoji id](#custom-emoji-object)       | return emojis created before this emoji was created (potentially something to do with pagination) | false | |
 
@@ -215,9 +215,9 @@ Create a new emoji for the team. Returns the new [emoji](#custom-emoji-object) o
 | Field | Type   | Description                                                                |
 |-------|--------|----------------------------------------------------------------------------|
 | name  | string | name of the emoji                                                          |
-| png?  | string | url to the image you uploaded ([CustomReaction](/reference#upload-a-file)) |
-| webp? | string | url to the image you uploaded ([CustomReaction](/reference#upload-a-file)) |
-| apng? | string | url to the image you uploaded ([CustomReaction](/reference#upload-a-file)) |
+| png?  | string | url to the image you uploaded ([CustomReaction](/schlussstrich/reference#upload-a-file)) |
+| webp? | string | url to the image you uploaded ([CustomReaction](/schlussstrich/reference#upload-a-file)) |
+| apng? | string | url to the image you uploaded ([CustomReaction](/schlussstrich/reference#upload-a-file)) |
 
 ## Bulk Create Custom Emoji
 <span class="http-verb">POST</span><span class="http-path">/teams/{[team.id](/resources/team#team-object)}/bulkCustomReactions</span>
@@ -226,7 +226,7 @@ Bulk-add custom emojis to the team. Returns an array of [emoji](#custom-emoji-ob
 
 | Field | Type                    | Description                                                                                                                                                                                                                                                 |
 |-------|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| urls  | array of partial emojis | the list of emojis to add. each item should include a `name` (alphanumberic only) and a `url` ([CustomReaction](/reference#upload-a-file)). if you are [importing an emoji pack](#upload-custom-emoji-pack), you may simply re-use that endpoint's response |
+| urls  | array of partial emojis | the list of emojis to add. each item should include a `name` (alphanumberic only) and a `url` ([CustomReaction](/schlussstrich/reference#upload-a-file)). if you are [importing an emoji pack](#upload-custom-emoji-pack), you may simply re-use that endpoint's response |
 
 ## Modify Team Emoji
 <span class="http-verb">PATCH</span><span class="http-path">/teams/{[team.id](/resources/team#team-object)}/customReactions/{[emoji.id](#custom-emoji-object)}</span>
