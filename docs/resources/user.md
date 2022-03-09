@@ -143,11 +143,15 @@ mehr Infos über Efe gibt es [hier]()
 - lächerlich
 - relativ aktiv
 
+mehr Infos über Urologe gibt es [hier]()
+
 ### Zytro
 
 - kindisch
 - ziemlich inaktiv
 - unreif
+
+mehr Infos über Zytro gibt es [hier]()
 
 
 
