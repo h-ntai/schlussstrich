@@ -6,7 +6,7 @@ Hier werden einzelne Staffmember kritisiert oder gelobt. Nicht jeder Staff-Membe
 ### Samion
 
 Bereits zu seinen Moderator-Zeiten hat dieser Junge oft seine Rechte fatal ausgenutzt, darunter zählen Fälle wie z.B. grundloses Bannen von anderen Membern.
-Mittlerweile hat er die Rolle "Supporter", welche zwar eigentlich die niedrigste von den Staff-Rollen (unabgesehen von der Testphase) ist, aber dennoch über gewisse Macht verfügt. Auf keinen Fall in nächster Zeit befördern aber auch nicht degradieren, da er sich evtl. gebssert hat.
+Mittlerweile hat er die Rolle "Supporter", welche zwar eigentlich die niedrigste von den Staff-Rollen (unabgesehen von der Testphase) ist, aber dennoch über gewisse Macht verfügt. Ich würde ihn auf keinen Fall in nächster Zeit befördern aber auch nicht degradieren, da er sich evtl. gebessert hat.
 
 ### Jamie
 
