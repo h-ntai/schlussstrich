@@ -23,7 +23,7 @@ Many of these libraries have dedicated groups in the [community API server](http
 
 ## Embed Visualizers
 
-Discord and Guilded both use relatively the same [embed structure](/resources/channel/#embed-object). Sent embeds look a bit different in the official client, but you can use the following resources to easily compose some JSON for use in your Guilded messages.
+Discord and Guilded both use relatively the same [embed structure](/schlussstrich/resources/channel/#embed-object). Sent embeds look a bit different in the official client, but you can use the following resources to easily compose some JSON for use in your Guilded messages.
 
 - [LeoV's Embed Visualizer](https://leovoel.github.io/embed-visualizer)
 - [Discohook](https://discohook.app) (click on "JSON Data Editor" when you're done)
