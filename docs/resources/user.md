@@ -8,7 +8,7 @@ Users are everywhere. They're in our servers, our DMs, our friends lists.. and i
 
 | Field               | Type                                         | Description                                                  |
 |---------------------|----------------------------------------------|--------------------------------------------------------------|
-| id                  | [generic id](/reference#generic-object-ids)  | the user's id                                                |
+| id                  | [generic id](/schlussstrich/reference#generic-object-ids)  | the user's id                                                |
 | name                | string                                       | the user's username, not unique across the platform          |
 | subdomain           | ?string                                      | the user's unique profile url                                |
 | aliases             | array                                        | the linked games on the user's profile                       |
@@ -106,7 +106,7 @@ Users are everywhere. They're in our servers, our DMs, our friends lists.. and i
 | name?           | string                              | the game's name (should be included if gameId is null)                                 |
 | type            | string                              | the type of status ("gamepresence", ?)   |
 | startedAt       | ISO8601 timestamp                   | when this status started                 |
-| guildedClientId | [uuid](/reference#snowflakes-uuids) | the client's id that this status is from |
+| guildedClientId | [uuid](/schlussstrich/reference#snowflakes-uuids) | the client's id that this status is from |
 
 ###### Game IDs
 
@@ -693,7 +693,7 @@ If you want to use this list in your application, feel free to grab it in [JSON 
 |------------------|------------------------------------------------------------|-----------------------------------------------|
 | content          | ?[user status content object](#user-status-content-object) | the actual content of the status              |
 | customReactionId | ?integer                                                   | the emoji's id that goes alongside the status |
-| customReaction?  | [emoji object](/resources/team#team-emoji-object)          | the emoji that goes alongside the status      |
+| customReaction?  | [emoji object](/schlussstrich/resources/team#team-emoji-object)          | the emoji that goes alongside the status      |
 
 ###### Example User Status
 
@@ -804,7 +804,7 @@ If you want to use this list in your application, feel free to grab it in [JSON 
 }
 ```
 
-![example user status in the client](/images/example_status.png)
+![example user status in the client](/schlussstrich/images/example_status.png)
 
 ### User Status Content Object
 
@@ -827,10 +827,10 @@ Represents a profile flair. Does not include stonks, those can be found at [`use
 
 | Field           | Type                                                    | Description                                                              |
 |-----------------|---------------------------------------------------------|--------------------------------------------------------------------------|
-| teams           | array of [teams](/resources/team#team-object)           | a list of this user's teams                                              |
+| teams           | array of [teams](/schlussstrich/resources/team#team-object)           | a list of this user's teams                                              |
 | user            | [user](#user-object)                                    | this user                                                                |
 | updateMessage   | ?[update message](#update-message-object)               | guilded's update message                                                 |
-| customReactions | array of [emojis](/resources/emoji#custom-emoji-object) | a list of emojis this user has access to                                 |
+| customReactions | array of [emojis](/schlussstrich/resources/emoji#custom-emoji-object) | a list of emojis this user has access to                                 |
 | reactionUsages  | array of [emoji uses](#emoji-use-object)                | a list of how many times a specific emoji has been used by the this user |
 | friends         | array of [friends](#friend-object)                      | a list of friends, friend requests and friend requests sent by this user |
 
@@ -840,7 +840,7 @@ Represents a profile flair. Does not include stonks, those can be found at [`use
 
 | Field        | Type                                   | Description                                         |
 |--------------|----------------------------------------|-----------------------------------------------------|
-| friendUserId | [user id](/reference/user#user-object) | id of the user                                      |
+| friendUserId | [user id](/schlussstrich/reference/user#user-object) | id of the user                                      |
 | friendStatus | string                                 | the current [status of friendship](#friend-status)  |
 | createdAt    | ISO8601 timestamp                      | when the request was sent/when request got accepted |
 
@@ -945,7 +945,7 @@ Leave a team. Returns an empty dictionary on success.
 ## Get User DMs
 <span class="http-verb">GET</span><span class="http-path">/users/{[user.id](#user-object)}/channels</span>
 
-Returns a list of [DM channel](/resources/channel#dm-channel-structure) objects on success.
+Returns a list of [DM channel](/schlussstrich/resources/channel#dm-channel-structure) objects on success.
 
 ## Create DM Channel
 <span class="http-verb">POST</span><span class="http-path">/users/{[user.id](#user-object)}/channels</span>
@@ -956,7 +956,7 @@ Returns a list of [DM channel](/resources/channel#dm-channel-structure) objects 
 !!! warning
     You should not use this endpoint to DM everyone in a server. DMs should generally be initiated by a user action. For notifying a large number of users, consider a role mention.
 
-Returns a `{"channel": dm_channel_object}`, where [dm_channel_object](/resources/channel#dm-channel-structure) is the DM channel that was created.
+Returns a `{"channel": dm_channel_object}`, where [dm_channel_object](/schlussstrich/resources/channel#dm-channel-structure) is the DM channel that was created.
 
 ###### JSON Params
 
