@@ -38,9 +38,10 @@ mehr Infos über Rouji gibt es [hier](/schlussstrich/resources/team/#roujina)
 
 ### Bled
 
-- abgehoben
+- etwas abgehoben
 - täuscht quit an, damit andere ihn anbetteln
-- nicht reif
+- nicht sehr reif
+- relativ ehrlich
 
 mehr Infos über Bled gibt es [hier](/schlussstrich/resources/team/#bled)
 
