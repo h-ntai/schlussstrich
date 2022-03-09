@@ -14,9 +14,9 @@ Used to represent a webhook.
 | name       | string                                 | the default name of the webhook             |
 | token?     | string                                 | the webhook's token. required for execution |
 | channelId  | uuid                                   | the channel id this webhook is for          |
-| teamId     | [team id](/resources/team#team-object) | the team's id this webhook is for           |
+| teamId     | [team id](/schlussstrich/resources/team#team-object) | the team's id this webhook is for           |
 | iconUrl    | ?string                                | the default avatar of the webhook           |
-| createdBy  | [user id](/resources/user#user-object) | the user's id who created this webhook      |
+| createdBy  | [user id](/schlussstrich/resources/user#user-object) | the user's id who created this webhook      |
 | createdAt  | ISO8601 timestamp                      | when this webhook was created               |
 | deletedAt  | ?ISO8601 timestamp                     | when this webhook was deleted               |
 
@@ -46,13 +46,13 @@ Create a new webhook. Returns a [webhook](#webhook-object) object on success.
 | Field     | Type                                            | Description                               |
 |-----------|-------------------------------------------------|-------------------------------------------|
 | name      | string                                          | name of the webhook (1-??? characters)    |
-| channelId | [channel id](/resources/channel#channel-object) | the channel's id to create the webhook in |
+| channelId | [channel id](/schlussstrich/resources/channel#channel-object) | the channel's id to create the webhook in |
 
 ## Get Channel Webhooks
 <span class="http-verb">GET</span><span class="http-path">/teams/{[team.id](/resources/team#team-object)}/channels/{[channel.id](/resources/channel#channel-object)}/webhooks</span>
 
 !!! bug
-    This endpoint returns an empty list; `{"webhooks": []}`. Instead, use [team.webhooks](/resources/team#get-team).
+    This endpoint returns an empty list; `{"webhooks": []}`. Instead, use [team.webhooks](/schlussstrich/resources/team#get-team).
 
 Get a list of [webhook](#webhook-object) objects.
 
@@ -73,7 +73,7 @@ Modify a webhook. Returns the updated [webhook](#webhook-object) object on succe
 |------------|-------------------------------------------------|----------------------------------------------------|
 | name       | string                                          | the default name of the webhook                    |
 | iconUrl    | image url                                       | image url for the default webhook avatar           |
-| channelId  | [channel id](/resources/channel#channel-object) | the new channel id this webhook should send to     |
+| channelId  | [channel id](/schlussstrich/resources/channel#channel-object) | the new channel id this webhook should send to     |
 
 ## Delete Webhook
 <span class="http-verb">DELETE</span><span class="http-path">/webhooks/{[webhook.id](#webhook-object)}</span>
@@ -84,7 +84,7 @@ Delete a webhook. Returns a partial [webhook](#webhook-object) object on success
 <span class="http-verb">POST</span><span class="http-path">https://media.guilded.gg/webhooks/{[webhook.id](#webhook-object)}/{[webhook.token](#webhook-object)}</span>
 
 !!! info
-    This endpoint is supposedly [similar enough](/images/webhooks_identical.png) to Discord's [`POST /webhooks/{webhook.id}/{webhook.token}`](https://discord.dev/resources/webhook#execute-webhook) that all you have to do is "change a url". However, many of the same fields are not supported (although they will not raise).
+    This endpoint is supposedly [similar enough](/schlussstrich/images/webhooks_identical.png) to Discord's [`POST /webhooks/{webhook.id}/{webhook.token}`](https://discord.dev/resources/webhook#execute-webhook) that all you have to do is "change a url". However, many of the same fields are not supported (although they will not raise).
 
 !!! info
     You do not have to append `/github` onto your webhook URL for use with GitHub repos and organizations. The URL by itself will work as intended.
@@ -99,4 +99,4 @@ Send a message through a webhook.
 | Field   | Type   | Description                                               | Required               |
 |---------|--------|-----------------------------------------------------------|------------------------|
 | content | string | the message contents (up to 2000 characters)              | one of content, embeds |
-| embeds  | array  | up to 10 [embed](/resources/channel#embed-object) objects | one of content, embeds |
+| embeds  | array  | up to 10 [embed](/schlussstrich/resources/channel#embed-object) objects | one of content, embeds |
