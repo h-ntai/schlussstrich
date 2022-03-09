@@ -3,6 +3,7 @@
 ## Rollenpositionen & Rollen an sich
 
 Zur Zeit gibt es folgende Hierarchie bei den Rollen:
+
 1. Admin
 2. Pokemon Meister
 3. Bleddi
