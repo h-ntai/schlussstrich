@@ -8,15 +8,15 @@ The meat of communication on Guilded. They are referred to as "servers" in the U
 
 | Field          | Type                                         | Description                                                        |
 |----------------|----------------------------------------------|--------------------------------------------------------------------|
-| id             | [generic id](/reference#generic-object-ids)  | team id                                                            |
+| id             | [generic id](/schlussstrich/reference#generic-object-ids)  | team id                                                            |
 | name           | string                                       | team name                                                          |
 | subdomain      | ?string                                      | custom "url" of the team. equivalent to vanity_url_code on discord |
 | bio            | ?string                                      | team bio                                                           |
 | profilePicture | ?string                                      | team icon url                                                      |
-| ownerId        | [user id](/reference#generic-object-ids)     | id of owner                                                        |
+| ownerId        | [user id](/schlussstrich/reference#generic-object-ids)     | id of owner                                                        |
 | members?       | array of [members](#team-member-object)      | the members in this team                                           |
 | bots?          | array of flow-bots                           | the flow-bots in this team                                         |
-| webhooks?      | array of [webhooks](/resources/webhook#webhook-object) | the webhooks in this team                                |
+| webhooks?      | array of [webhooks](/schlussstrich/resources/webhook#webhook-object) | the webhooks in this team                                |
 
 ###### Example Team
 
@@ -28,7 +28,7 @@ Refer to [Get Team](#get-team)'s example response
 
 | Field               | Type                                                        | Description                                                               |
 |---------------------|-------------------------------------------------------------|---------------------------------------------------------------------------|
-| id                  | [generic id](/reference#generic-object-ids)                 | the user's id                                                             |
+| id                  | [generic id](/schlussstrich/reference#generic-object-ids)                 | the user's id                                                             |
 | name                | string                                                      | the user's username, not unique across the platform                       |
 | nickname            | string                                                      | the member's team-specific nickname                                       |
 | badges              | ?array                                                      | the badges that this member has ("GuildedStaff", "PartnerProgram", ?)     |
@@ -36,9 +36,9 @@ Refer to [Get Team](#get-team)'s example response
 | profilePicture      | string (url)                                                | the user's avatar url                                                     |
 | profileBannerBlur   | ?string (url)                                               | the user's banner url                                                     |
 | joinDate            | ISO8601 timestamp                                           | when this member joined their team                                        |
-| userStatus          | [user status object](/resources/user#user-status-object)    | this user's current activity/"status"                                     |
-| userPresenceStatus  | integer                                                     | this [user's presence](/resources/user#user-presence) (online, idle, etc) |
-| userTransientStatus | [transient status object](/resources/user#transient-status) | this user's transient status (game, streaming, ?)                         |
+| userStatus          | [user status object](/schlussstrich/resources/user#user-status-object)    | this user's current activity/"status"                                     |
+| userPresenceStatus  | integer                                                     | this [user's presence](/schlussstrich/resources/user#user-presence) (online, idle, etc) |
+| userTransientStatus | [transient status object](/schlussstrich/resources/user#transient-status) | this user's transient status (game, streaming, ?)                         |
 | aliases             | array                                                       | the linked games on the user's profile                                    |
 | lastOnline          | ISO8601 timestamp                                           | when the user was last online                                             |
 | roleIds             | array of integer                                            | the roles' ids that the member has                                        |
@@ -104,8 +104,8 @@ Refer to [Get Team](#get-team)'s example response
 | Field     | Type                                            | Description                                          |
 |-----------|-------------------------------------------------|------------------------------------------------------|
 | reason    | string                                          | the reason for the ban (can be empty, won't be null) |
-| userId    | [user id](/resources/user#user-object)          | the banned user's id                                 |
-| bannedBy  | [user id](/resources/user#user-object)          | the moderator who banned this user                   |
+| userId    | [user id](/schlussstrich/resources/user#user-object)          | the banned user's id                                 |
+| bannedBy  | [user id](/schlussstrich/resources/user#user-object)          | the moderator who banned this user                   |
 | createdAt | ISO8601 timestamp                               | when this ban was created                            |
 
 ###### Example Ban
@@ -125,11 +125,11 @@ Refer to [Get Team](#get-team)'s example response
 
 | Field     | Type                                        | Description                                                    |
 |-----------|---------------------------------------------|----------------------------------------------------------------|
-| id        | [generic id](/reference#generic-object-ids) | the invite's id, referred to as an 'invite code' in the client |
+| id        | [generic id](/schlussstrich/reference#generic-object-ids) | the invite's id, referred to as an 'invite code' in the client |
 | createdAt | ISO8601 timestamp                           | when the invite was created                                    |
 | teamId    | [team id](#team-object)                     | the team's id that the invite is for                           |
-| invitedBy | [user id](/resources/user#user-object)      | the user's id who created the invite                           |
-| userBy    | ?[user id](/resources/user#user-object)     | a user's id who used the invite?                               |
+| invitedBy | [user id](/schlussstrich/resources/user#user-object)      | the user's id who created the invite                           |
+| userBy    | ?[user id](/schlussstrich/resources/user#user-object)     | a user's id who used the invite?                               |
 | gameId    | ?integer                                    | the game's id that the invite is for                           |
 | useCount  | integer                                     | how many times the invite has been used                        |
 
@@ -621,7 +621,7 @@ Returns the [team](#team-object) object for the given id.
 ## Modify Team
 <span class="http-verb">PUT</span><span class="http-path">/teams/{[team.id](#team-object)}/games/null/settings</span>
 
-Modify a team's settings. Returns `{"updated": true}` on success. Fires a [Team Update](/topics/gateway#TeamUpdated) Gateway event.
+Modify a team's settings. Returns `{"updated": true}` on success. Fires a [Team Update](/schlussstrich/topics/gateway#TeamUpdated) Gateway event.
 
 !!! Info
     All parameters to this endpoint are optional
@@ -642,19 +642,19 @@ Delete a team permanently. User must be owner. Returns `{"success": true}` on su
 ## Get Team Channels
 <span class="http-verb">GET</span><span class="http-path">/teams/{[team.id](#team-object)}/channels</span>
 
-Returns a list of team [channel](/resources/channel#channel-object) objects.
+Returns a list of team [channel](/schlussstrich/resources/channel#channel-object) objects.
 
 ## Create Team Channel
 <span class="http-verb">POST</span><span class="http-path">/teams/{[team.id](#team-object)}/groups/{group.id}/channels</span>
 
-Create a new [channel](/resources/channel#channel-object) object. Requires the `MANAGE_CHANNELS` permission. Returns the new [channel](/resources/channel#channel-object) object on success. Fires a [Channel Create](/topics/gateway#TeamChannelCreated) Gateway event.
+Create a new [channel](/schlussstrich/resources/channel#channel-object) object. Requires the `MANAGE_CHANNELS` permission. Returns the new [channel](/schlussstrich/resources/channel#channel-object) object on success. Fires a [Channel Create](/schlussstrich/topics/gateway#TeamChannelCreated) Gateway event.
 
 ###### JSON Params
 
 | Field             | Type    | Description                                                                       | Required | Default |
 |-------------------|---------|-----------------------------------------------------------------------------------|----------|---------|
 | name              | string  | channel name (1-??? characters, can include spaces)                               | true     |         |
-| contentType       | string  | the [type of channel](/channels#channel-content-types)                            | true     |         |
+| contentType       | string  | the [type of channel](/schlussstrich/channels#channel-content-types)                            | true     |         |
 | channelCategoryId | integer | the category's ID to create this channel under. omit to create without a category | false    | null    |
 | isPublic          | boolean | whether or not this channel should be visible to users who aren't in the team     | false    | false   |
 
@@ -666,7 +666,7 @@ Returns a [team member](#team-member-object) object for the specified user.
 ## List Team Members
 <span class="http-verb">GET</span><span class="http-path">/teams/{[team.id](#team-object)}/members</span>
 
-Returns a list of partial [team members](#team-member-object), flow bots, and [webhooks](/topics/webhook#webhook-object) under `members`, `bots`, and `webhooks` keys respectively. A partial team member object includes, at minimum, `id` and `name`, but may also include one or multiple of `profilePicture`, `roleIds`, `userPresenceStatus`, and `nickname`.
+Returns a list of partial [team members](#team-member-object), flow bots, and [webhooks](/schlussstrich/topics/webhook#webhook-object) under `members`, `bots`, and `webhooks` keys respectively. A partial team member object includes, at minimum, `id` and `name`, but may also include one or multiple of `profilePicture`, `roleIds`, `userPresenceStatus`, and `nickname`.
 
 ## Change Team Member Nickname
 <span class="http-verb">PUT</span><span class="http-path">/teams/{[team.id](#team-object)}/members/{[user.id](/resources/user#user-object)}/nickname</span>
@@ -698,7 +698,7 @@ Set a team member's XP.
 ## Remove Team Member
 <span class="http-verb">DELETE</span><span class="http-path">/teams/{[team.id](#team-object)}/members/{[user.id](/resources/user#user-object)}</span>
 
-Remove a member from a team. This is the same endpoint as [Leave Team](/resources/user#leave-team), but is documented here as well because it can also be used for kicking.
+Remove a member from a team. This is the same endpoint as [Leave Team](/schlussstrich/resources/user#leave-team), but is documented here as well because it can also be used for kicking.
 
 ## Get Team Bans
 <span class="http-verb">GET</span><span class="http-path">/teams/{[team.id](#team-object)}/members/ban</span>
@@ -716,8 +716,8 @@ Create a team ban (ban somebody), and optionally delete previous messages sent b
 |-----------------------|--------------------------------------------|------------------------------------------------------|
 | deleteHistoryOptions? | integer                                    | [delete history options](#delete-history-options)    |
 | afterDate             | ?ISO8601 timestamp                         | the date from which to delete this user's messages   |
-| memberId              | [member id](/reference#generic-object-ids) | the user's id to ban                                 |
-| teamId                | [team id](/reference#generic-object-ids)   | the team's id to ban this user on (the current team) |
+| memberId              | [member id](/schlussstrich/reference#generic-object-ids) | the user's id to ban                                 |
+| teamId                | [team id](/schlussstrich/reference#generic-object-ids)   | the team's id to ban this user on (the current team) |
 | reason                | string                                     | reason for the ban. can be empty                     |
 
 ## Remove Team Ban
@@ -729,8 +729,8 @@ Remove the ban for a user. Returns an empty dictionary on success.
 
 | Field    | Type                                       | Description                                              |
 |----------|--------------------------------------------|----------------------------------------------------------|
-| memberId | [member id](/reference#generic-object-ids) | the user's id to unban                                   |
-| teamId   | [team id](/reference#generic-object-ids)   | the team's id to unban this user from (the current team) |
+| memberId | [member id](/schlussstrich/reference#generic-object-ids) | the user's id to unban                                   |
+| teamId   | [team id](/schlussstrich/reference#generic-object-ids)   | the team's id to unban this user from (the current team) |
 
 ###### Delete History Options
 
@@ -801,7 +801,7 @@ Returns `{"invite": {"id": invite_code}}`, where invite_code is the generated in
 ## Get Invite
 <span class="http-verb">GET</span><span class="http-path">/invites/{[invite.id](#invite-object)}</span>
 
-Get an invite by its id (invite code). Returns an object with a [`team`](#team-object) (the team the invite is for) and a [`user`](/resources/user#user-object) (the user who created the invite) on success.
+Get an invite by its id (invite code). Returns an object with a [`team`](#team-object) (the team the invite is for) and a [`user`](/schlussstrich/resources/user#user-object) (the user who created the invite) on success.
 
 ###### Query Params
 
