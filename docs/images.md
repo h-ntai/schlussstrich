@@ -1,6 +1,6 @@
-# Images
+# Screenshots
 
-Here is an (incomplete) selection of "official images" collected from the Guilded client & website. They are owned by guilded.gg and are presented here without approval from Guilded/guilded.gg.
+Hier ist eine Ansammlung von Screenshots, die in den letzten Monaten von den Chats gemacht wurden.
 
 ## Members
 ![members](https://img.guildedcdn.com/asset/TabEmptyStates/gil_members.png)
