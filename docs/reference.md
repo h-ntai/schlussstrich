@@ -20,18 +20,18 @@ Your typical error message should look like this:
 }
 ```
 
-... along with an appropriate [HTTP status code](/topics/status-codes#http).
+... along with an appropriate [HTTP status code](/schlussstrich/topics/status-codes#http).
 
 ## Authentication
 
-As mentioned in [the Intro page](/#userbots-you), there is no bot API. In order to automate an application on the API, you would have to use a user account.
+As mentioned in [the Intro page](/schlussstrich/#userbots-you), there is no bot API. In order to automate an application on the API, you would have to use a user account.
 
 For the HTTP API, authentication is not passed through the headers, but the JSON body. 
 
 ## Quick Authentication How-To
 <span class="http-verb">POST</span><span class="http-path">/login</span>
 
-Logs you into Guilded. Important data here is the returned `guilded_mid` cookie, which you need to pass as a `guildedClientId` query argument when [connecting to the gateway](/topics/gateway#connecting-to-the-gateway).
+Logs you into Guilded. Important data here is the returned `guilded_mid` cookie, which you need to pass as a `guildedClientId` query argument when [connecting to the gateway](/schlussstrich/topics/gateway#connecting-to-the-gateway).
 
 ###### JSON Parameters
 
@@ -46,7 +46,7 @@ The REST and WebSocket APIs are 'secure' (HTTPS, WSS). I am unsure of any other 
 
 ## Snowflakes & UUIDs
 
-Unlike Discord, Guilded uses [UUIDs](https://wikipedia.org/wiki/Universally_unique_identifier) for many of its unique IDs ([Channels](/resources/channel#channel-object) (all types), [Messages](/resources/channel#message-object), and [Webhooks](/resources/webhook#webhook-object) use UUIDs). Because of this, none of the same properties apply as to Snowflakes.
+Unlike Discord, Guilded uses [UUIDs](https://wikipedia.org/wiki/Universally_unique_identifier) for many of its unique IDs ([Channels](/schlussstrich/resources/channel#channel-object) (all types), [Messages](/schlussstrich/resources/channel#message-object), and [Webhooks](/resources/webhook#webhook-object) use UUIDs). Because of this, none of the same properties apply as to Snowflakes.
 
 ### Generating UUIDs
 
@@ -64,7 +64,7 @@ For some endpoints, you will have to Bring Your Own UUID (BYOU). Worry not - thi
 
 ## Generic Object IDs
 
-These are 8-character, probably-meaningless IDs that Guilded uses in lieu of Snowflakes or UUIDs. They are used for objects like [Teams](/resources/team#team-object), [Groups](/resources/group#group-object), and [Users](/resources/user#user-object).
+These are 8-character, probably-meaningless IDs that Guilded uses in lieu of Snowflakes or UUIDs. They are used for objects like [Teams](/schlussstrich/resources/team#team-object), [Groups](/schlussstrich/resources/group#group-object), and [Users](/schlussstrich/resources/user#user-object).
 
 ## ISO8601 Date/Time
 
@@ -91,7 +91,7 @@ The HTTP API has very loose rate limits, most likely due to it not being written
 
 ## Gateway (WebSocket) API
 
-The Gateway API is used for maintaining persistent, stateful websocket connections between your client and Guilded servers. These connections are used for receiving real-time events your client can use to track and update local state. For information on opening Gateway connections, please see the [Gateway API](/topics/gateway) section.
+The Gateway API is used for maintaining persistent, stateful websocket connections between your client and Guilded servers. These connections are used for receiving real-time events your client can use to track and update local state. For information on opening Gateway connections, please see the [Gateway API](/schlussstrich/topics/gateway) section.
 
 ## Message Formatting
 
