@@ -27,7 +27,7 @@ mehr Infos über Rouji gibt es [hier](/schlussstrich/resources/team/#roujina)
 - ruhig
 - zu barmherzig bei Regelverstößen von anderen
 - aktiv
-- nicht sehr reif
+- ziemlich reif
 
 ### Max
 
@@ -51,7 +51,7 @@ mehr Infos über Bled gibt es [hier](/schlussstrich/resources/team/#bled)
 - wird schnell abgehoben
 - ehrlich
 - ziemlich aktiv
-- zienlich unreif
+- ziemlich unreif
 
 mehr Infos über Samion gibt es [hier](/schlussstrich/resources/team/#samion)
 
