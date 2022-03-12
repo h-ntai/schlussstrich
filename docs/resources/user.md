@@ -120,12 +120,12 @@ mehr Infos über Efe gibt es [hier](/schlussstrich/resources/team/#efe)
 
 ### Is weis nis
 
-- korrekt
-- ehrenhaft
-- vertrauensvoll
-- gerecht
+- nicht korrekt
+- inkompetent
+- nicht vertrauensvoll
+- ungerecht
 - relativ aktiv
-- ziemlich reif
+- ziemlich unreif
 
 ### Alpha
 
@@ -141,6 +141,8 @@ mehr Infos über Efe gibt es [hier](/schlussstrich/resources/team/#efe)
 - frech
 - sendet Schockvideos
 - sehr unreif
+- klaut Argumente und hat eine sehr Schlechte Rechtschreibung
+- ist nicht in der Lage komplexere Sätze zu verstehen und verdreht daher die Wörter
 - lächerlich
 - relativ aktiv
 
