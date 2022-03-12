@@ -95,9 +95,9 @@ mehr Infos über Efe gibt es [hier](/schlussstrich/resources/team/#efe)
 
 ### Alex
 
-- manchmal ehrenlos, manchmal mies ehrenhaft
+- selten ehrenlos, oft mies ehrenhaft
 - meißt gerecht
-- bisschen aktiv
+- relativ aktiv
 - ehrlich
 - ziemlich reif
 
